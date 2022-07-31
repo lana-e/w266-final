@@ -1,0 +1,3 @@
+# w266-final
+This repo houses the notebook I used to fine-tune a new prompt for Google's T5 model.
+I used data from Kaggle's [Movies Dataset](https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset?select=movies_metadata.csv) to train the T5 model to respond to a "describe" prompt and convert input text containing movie data into a short overview of the movie. A baseline model was trained with plot overviews from the Movies Dataset, and an improved model was trained with Wikipedia descriptions of the movies in the training data. I used few-shot training to fine-tune the model and evaluated my results using ROUGE scores, comparing overlapping words between the model-generated descriptions and the target output text of each model.
